@@ -8,8 +8,8 @@ This project includes a [Vagrant](https://www.vagrantup.com/) virtual environmen
 
 1. Clone the project repository and connect to the virtual machine
 ```
-$ git clone https://github.com/7u5h4r/logs.git
-$ cd logs
+$ https://github.com/7u5h4r/Udacity-Front-End-Nanodegree.git
+$ cd Log_analysis
 $ vagrant up
 $ vagrant ssh
 
@@ -18,16 +18,16 @@ $ vagrant ssh
 ```
 or run this command 
 
-vagrant@vagrant:~/logs$ wget https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
+vagrant@vagrant:~/vagrant$ wget https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
 
 ```
 3. Connect to the database and create views. To create views use the code provided under the 'Create Views' section.
 ```sh
-vagrant@vagrant:~/logs$ psql -d news
+vagrant@vagrant:~/vagrant$ psql -d news
 ```
 4. Run the code print results
 ```sh
-vagrant@vagrant:~/logs$ python newsdata.py
+vagrant@vagrant:~/vagrant$ python newsdata.py
 ```
 
 ### Create Views
@@ -86,7 +86,7 @@ CREATE VIEW  date_requests AS
 ```
 ### Results
 ```
-vagrant@vagrant:~/logs$ python newsdata.py
+vagrant@vagrant:~/vagrant$ python newsdata.py
 
 Three most popular articles of all time:
 Candidate is jerk, alleges rival - 338647 views
